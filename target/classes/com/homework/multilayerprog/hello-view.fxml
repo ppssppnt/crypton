@@ -20,18 +20,26 @@
                     </VBox>
                     <VBox prefHeight="400.0" prefWidth="255.0">
                         <children>
-                            <Label fx:id="l1" prefHeight="23.0" prefWidth="245.0" text="Label" />
-                            <Label fx:id="l2" prefHeight="22.0" prefWidth="256.0" text="Label" />
-                            <Label fx:id="l3" prefHeight="25.0" prefWidth="255.0" text="Label" />
-                            <Label fx:id="l4" prefHeight="21.0" prefWidth="251.0" text="Label" />
+                  <Label text="Name:" />
+                            <Label fx:id="l1" alignment="CENTER" prefHeight="23.0" prefWidth="261.0" text="Label" />
+                  <Label text="Phone:" />
+                            <Label fx:id="l2" alignment="CENTER" prefHeight="22.0" prefWidth="256.0" text="Label" />
+                  <Label text="Address:" />
+                            <Label fx:id="l3" alignment="CENTER" prefHeight="25.0" prefWidth="255.0" text="Label" />
+                  <Label text="Email:" />
+                            <Label fx:id="l4" alignment="CENTER" prefHeight="21.0" prefWidth="261.0" text="Label" />
                             <Button mnemonicParsing="false" onAction="#delbut" text="Delete" />
                             <TextField fx:id="t1" />
                             <TextField fx:id="t2" />
                             <TextField fx:id="t3" />
                             <TextField fx:id="t4" />
-                            <Button mnemonicParsing="false" onAction="#addbut" prefHeight="24.0" prefWidth="51.0" text="Add" />
-                  <Button fx:id="lbut" mnemonicParsing="false" onAction="#start" text="Load" />
-                  <Button mnemonicParsing="false" onAction="#save" prefHeight="24.0" prefWidth="50.0" text="Save" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#save" prefHeight="24.0" prefWidth="50.0" text="Save" />
+                                  <Button mnemonicParsing="false" onAction="#addbut" prefHeight="24.0" prefWidth="51.0" text="Add" />
+                        <Button fx:id="lbut" mnemonicParsing="false" onAction="#start" text="Load" />
+                     </children>
+                  </HBox>
                         </children>
                     </VBox>
                 </children>
